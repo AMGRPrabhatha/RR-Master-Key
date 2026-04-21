@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Quote } from 'lucide-react';
+import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 import './Extras.css';
 
 export const FeaturedBrands = () => {
@@ -98,9 +98,8 @@ export const Testimonials = () => {
           </div>
           
           <div className="slider-controls">
-            <button className="slider-btn" onClick={prevTestimonial}>
-              <span className="sr-only">Previous</span>
-              ←
+            <button className="slider-btn" onClick={prevTestimonial} aria-label="Previous testimonial">
+              <ChevronLeft size={24} />
             </button>
             <div className="slider-dots">
               {testimonials.map((_, i) => (
@@ -111,9 +110,8 @@ export const Testimonials = () => {
                 />
               ))}
             </div>
-            <button className="slider-btn" onClick={nextTestimonial}>
-              <span className="sr-only">Next</span>
-              →
+            <button className="slider-btn" onClick={nextTestimonial} aria-label="Next testimonial">
+              <ChevronRight size={24} />
             </button>
           </div>
         </div>
