@@ -105,12 +105,27 @@
 
 @media (max-width: 768px) {
   .contact-grid {
+    grid-template-columns: 1fr;
     gap: 3rem;
+    padding: 0 1.5rem; /* Ensure horizontal padding on mobile */
   }
   .contact-info-title {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact-info-desc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .contact-methods {
+    gap: 1.5rem;
   }
   .contact-form-card {
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.25rem;
+    border-radius: 24px;
+    margin: 0 1.5rem; /* Ensure form card also has spacing from edges */
+  }
+  .method-value {
+    font-size: 1rem;
   }
 }

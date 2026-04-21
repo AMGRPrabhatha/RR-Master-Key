@@ -178,6 +178,21 @@
 }
 
 @media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1.5rem 100px; /* Added horizontal padding and space for WhatsApp button */
+  }
+  .blog-card-image {
+    height: 220px;
+  }
+  .blog-card-content {
+    padding: 1.25rem;
+  }
+  .blog-card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
   .blog-modal {
     max-height: 100vh;
     border-radius: 0;
@@ -186,10 +201,14 @@
     height: 250px;
   }
   .modal-body {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
   }
   .modal-body h2 {
     font-size: 1.75rem;
+  }
+  .modal-meta {
+    gap: 1rem;
+    flex-wrap: wrap;
   }
   .blog-modal-overlay {
     padding: 0;
