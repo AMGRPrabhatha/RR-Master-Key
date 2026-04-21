@@ -4,6 +4,8 @@ import { Wind, Shield, ArrowUpRight, Plus, Clock, Headphones } from 'lucide-reac
 import './FeaturesSection.css';
 
 const FeaturesSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const features = [
     {
       icon: <Shield size={28} />,
@@ -25,6 +27,13 @@ const FeaturesSection = () => {
       title: "24/7 Tracking",
       desc: "Stay updated with real-time tracking of your vehicle's journey from the auction house to your doorstep."
     }
+  ];
+
+  const processSteps = [
+    { step: "01", title: "Auction Selection", desc: "We browse over 50,000+ vehicles weekly in Japan's premier auctions to find cars that meet your specific requirements." },
+    { step: "02", title: "Physical Inspection", desc: "Our on-ground Japanese team performs a detailed 150-point physical inspection, checking everything from engine health to paint depth." },
+    { step: "03", title: "Customs & Shipping", desc: "We handle the entire paperwork, tax, and duty process. Your vehicle is shipped in secure, insured car carriers." },
+    { step: "04", title: "Final Delivery", desc: "After a final local detailing, we deliver the car directly to your doorstep in Sri Lanka, ready for the road." }
   ];
 
   return (
@@ -87,7 +96,7 @@ const FeaturesSection = () => {
               </div>
             </div>
 
-            <button className="modern-action-btn">
+            <button className="modern-action-btn" onClick={() => setIsModalOpen(true)}>
               Explore Our Process <ArrowUpRight size={18} />
             </button>
           </div>
@@ -111,6 +120,46 @@ const FeaturesSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Process Modal */}
+      <AnimatePresence>
+        {isModalOpen && (
+          <div className="process-modal-overlay">
+            <motion.div 
+              className="process-modal"
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            >
+              <button className="modal-close-btn" onClick={() => setIsModalOpen(false)} aria-label="Close modal">
+                <Plus style={{ transform: 'rotate(45deg)' }} size={24} />
+              </button>
+              
+              <div className="modal-header">
+                <span className="modern-badge">How It Works</span>
+                <h2>Our Importation Process</h2>
+                <p>Transparent, professional, and reliable from Japan to Sri Lanka.</p>
+              </div>
+
+              <div className="process-steps-grid">
+                {processSteps.map((s, i) => (
+                  <div className="process-step-item" key={i}>
+                    <div className="step-number">{s.step}</div>
+                    <div className="step-content">
+                      <h3>{s.title}</h3>
+                      <p>{s.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <button className="modal-cta-btn" onClick={() => setIsModalOpen(false)}>
+                Got It, Thanks!
+              </button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
