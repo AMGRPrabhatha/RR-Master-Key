@@ -36,12 +36,12 @@ const Shop = () => {
     { name: 'Suzuki Wagon R FX', model: '2026 Hybrid FX', img: '/cars/Suzuki Wagon R FX.jpg', brand: 'Suzuki', bodyStyle: 'Hatchback' },
     { name: 'Suzuki Wagon R FZ', model: '2026 Hybrid FZ', img: '/cars/Suzuki Wagon R FZ.jpg', brand: 'Suzuki', bodyStyle: 'Hatchback' },
     
-    { name: 'Toyota Raize Z', model: '2026 Turbo Z Package', img: '/cars/Toyota Raize Z.jpg', brand: 'Toyota', bodyStyle: 'SUV' },
-    { name: 'Toyota Raize G', model: '2026 Turbo G Package', img: '/cars/Toyota Raize G.jpg', brand: 'Toyota', bodyStyle: 'SUV' },
+    { name: 'Toyota Raize Z', model: '2026 Turbo Z Package', img: '/cars/TOYOTA-RAIZE-Z-GRADE-20207.jpg', brand: 'Toyota', bodyStyle: 'SUV' },
+    { name: 'Toyota Raize G', model: '2026 Turbo G Package', img: '/cars/toyota-raize-53235.jpg', brand: 'Toyota', bodyStyle: 'SUV' },
     { name: 'Toyota Raize X', model: '2026 Turbo X Package', img: '/cars/Toyota Raize X.jpg', brand: 'Toyota', bodyStyle: 'SUV' },
     
     { name: 'Toyota Yaris G', model: '2026 Hybrid G Package', img: '/cars/Toyota Yaris G.jpg', brand: 'Toyota', bodyStyle: 'Hatchback' },
-    { name: 'Toyota Yaris X', model: '2026 Hybrid X Package', img: '/cars/Toyota Yaris X.jpg', brand: 'Toyota', bodyStyle: 'Hatchback' },
+    { name: 'Toyota Yaris X', model: '2026 Hybrid X Package', img: '/cars/Toyota Yaris X .jpg', brand: 'Toyota', bodyStyle: 'Hatchback' },
     
     { name: 'Toyota Yaris Cross Z', model: '2026 Hybrid Z SUV', img: '/cars/Toyota Yaris Cross Z.jpg', brand: 'Toyota', bodyStyle: 'SUV' },
     { name: 'Toyota Yaris Cross G', model: '2026 Hybrid G SUV', img: '/cars/Toyota Yaris Cross G.jpg', brand: 'Toyota', bodyStyle: 'SUV' },
