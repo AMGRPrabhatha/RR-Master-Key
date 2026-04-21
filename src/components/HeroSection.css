@@ -1,0 +1,118 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-light);
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.5) 0%,
+    rgba(0,0,0,0.3) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.hero-text-wrapper.centered {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-title.centered {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -2px;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle.centered {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero-actions.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-btn.shop-now-btn.pill {
+  background: white !important;
+  color: black !important;
+  padding: 1.25rem 3rem !important;
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+.primary-btn.shop-now-btn.pill:hover {
+  background: #f0f0f0 !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 120px 0 80px;
+  }
+
+  .hero-title.centered {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-subtitle.centered {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .primary-btn.shop-now-btn.pill {
+    padding: 1rem 2.5rem !important;
+    font-size: 1rem !important;
+  }
+}
