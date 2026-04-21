@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Wind, Shield, ArrowUpRight, Plus, Clock, Headphones } from 'lucide-react';
+import { Wind, Shield, ArrowUpRight, Plus, Clock, Headphones, ChevronLeft, ChevronRight } from 'lucide-react';
 import './FeaturesSection.css';
 
 const FeaturesSection = () => {
