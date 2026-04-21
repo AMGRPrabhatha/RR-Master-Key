@@ -24,6 +24,45 @@ const Shop = () => {
     { name: 'Honda Civic Type R', model: '2026 Sport Hatchback', img: '/cars/honda_civic.png', brand: 'Honda', bodyStyle: 'Coupe' },
     { name: 'Mitsubishi Montero Sport', model: '2026 Adventure SUV', img: '/cars/mitsubishi_montero.png', brand: 'Mitsubishi', bodyStyle: 'SUV' },
     { name: 'Audi Q8', model: '2026 Luxury Coupe SUV', img: '/cars/audi_q8.png', brand: 'Audi', bodyStyle: 'SUV' },
+    
+    // New Additions
+    { name: 'Honda Vezel Z', model: '2026 e:HEV Z Package', img: '', brand: 'Honda', bodyStyle: 'SUV' },
+    { name: 'Honda Vezel X', model: '2026 e:HEV X Package', img: '', brand: 'Honda', bodyStyle: 'SUV' },
+    { name: 'Honda Vezel G', model: '2026 Gasoline G Package', img: '', brand: 'Honda', bodyStyle: 'SUV' },
+    { name: 'Honda Vezel RS', model: '2026 e:HEV RS Sport', img: '', brand: 'Honda', bodyStyle: 'SUV' },
+    
+    { name: 'Honda Fit', model: '2026 e:HEV Home', img: '', brand: 'Honda', bodyStyle: 'Hatchback' },
+    
+    { name: 'Suzuki Wagon R FX', model: '2026 Hybrid FX', img: '', brand: 'Suzuki', bodyStyle: 'Hatchback' },
+    { name: 'Suzuki Wagon R FZ', model: '2026 Hybrid FZ', img: '', brand: 'Suzuki', bodyStyle: 'Hatchback' },
+    
+    { name: 'Toyota Raize Z', model: '2026 Turbo Z Package', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    { name: 'Toyota Raize G', model: '2026 Turbo G Package', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    { name: 'Toyota Raize X', model: '2026 Turbo X Package', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    
+    { name: 'Toyota Yaris G', model: '2026 Hybrid G Package', img: '', brand: 'Toyota', bodyStyle: 'Hatchback' },
+    { name: 'Toyota Yaris X', model: '2026 Hybrid X Package', img: '', brand: 'Toyota', bodyStyle: 'Hatchback' },
+    
+    { name: 'Toyota Yaris Cross Z', model: '2026 Hybrid Z SUV', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    { name: 'Toyota Yaris Cross G', model: '2026 Hybrid G SUV', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    { name: 'Toyota Yaris Cross X', model: '2026 Hybrid X SUV', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    
+    { name: 'Land Rover Defender 90', model: '2026 Hard Top', img: '', brand: 'Land Rover', bodyStyle: 'SUV' },
+    { name: 'Land Rover Defender 110', model: '2026 SE Dynamic', img: '', brand: 'Land Rover', bodyStyle: 'SUV' },
+    { name: 'Land Rover Defender 130', model: '2026 Outbound', img: '', brand: 'Land Rover', bodyStyle: 'SUV' },
+    
+    { name: 'Toyota LC 250 Prado VX', model: '2026 Luxury Edition', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    { name: 'Toyota LC 250 Prado GX', model: '2026 Adventure Grade', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    { name: 'Toyota LC 250 Prado ZX', model: '2026 Premium Flagship', img: '', brand: 'Toyota', bodyStyle: 'SUV' },
+    
+    { name: 'Audi Q5 Jeep', model: '2026 Quattro SUV', img: '', brand: 'Audi', bodyStyle: 'SUV' },
+    { name: 'Audi A4 Car', model: '2026 Premium Sedan', img: '', brand: 'Audi', bodyStyle: 'Sedan' },
+    
+    { name: 'BMW X5 Jeep', model: '2026 xDrive SUV', img: '', brand: 'BMW', bodyStyle: 'SUV' },
+    { name: 'BMW 3 Series Car', model: '2026 Sport Sedan', img: '', brand: 'BMW', bodyStyle: 'Sedan' },
+    
+    { name: 'Mercedes-Benz GLE Jeep', model: '2026 4MATIC SUV', img: '', brand: 'Mercedes-Benz', bodyStyle: 'SUV' },
+    { name: 'Mercedes-Benz C-Class Car', model: '2026 Luxury Sedan', img: '', brand: 'Mercedes-Benz', bodyStyle: 'Sedan' },
   ];
 
   const handleBrandChange = (brand) => {
@@ -51,8 +90,8 @@ const Shop = () => {
     });
   }, [selectedBrands, selectedBodyStyles]);
 
-  const brands = ['Toyota', 'Land Rover', 'Jaguar', 'Nissan', 'Mercedes-Benz', 'BMW', 'Lexus', 'Audi', 'Honda', 'Mitsubishi'];
-  const bodyStyles = ['SUV', 'Sedan', 'Coupe'];
+  const brands = ['Toyota', 'Land Rover', 'Jaguar', 'Nissan', 'Mercedes-Benz', 'BMW', 'Lexus', 'Audi', 'Honda', 'Mitsubishi', 'Suzuki'];
+  const bodyStyles = ['SUV', 'Sedan', 'Coupe', 'Hatchback'];
 
   return (
     <div className="page-wrapper shop-page">
