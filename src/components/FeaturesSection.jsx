@@ -5,6 +5,7 @@ import './FeaturesSection.css';
 
 const FeaturesSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [featureIndex, setFeatureIndex] = useState(0);
 
   const features = [
     {
@@ -29,6 +30,9 @@ const FeaturesSection = () => {
     }
   ];
 
+  const nextFeature = () => setFeatureIndex((prev) => (prev + 1) % features.length);
+  const prevFeature = () => setFeatureIndex((prev) => (prev - 1 + features.length) % features.length);
+
   const processSteps = [
     { step: "01", title: "Auction Selection", desc: "We browse over 50,000+ vehicles weekly in Japan's premier auctions to find cars that meet your specific requirements." },
     { step: "02", title: "Physical Inspection", desc: "Our on-ground Japanese team performs a detailed 150-point physical inspection, checking everything from engine health to paint depth." },
@@ -51,7 +55,49 @@ const FeaturesSection = () => {
           <p className="modern-section-subtitle">We don't just import cars; we deliver dreams with uncompromising standards.</p>
         </div>
 
-        <div className="modern-features-grid">
+        {/* Mobile Slider View */}
+        <div className="features-slider-mobile">
+          <div className="slider-content">
+            <AnimatePresence mode="wait">
+              <motion.div 
+                className="modern-feature-card"
+                key={featureIndex}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.4 }}
+              >
+                <div className="card-icon-wrapper">
+                  {features[featureIndex].icon}
+                </div>
+                <h3>{features[featureIndex].title}</h3>
+                <p>{features[featureIndex].desc}</p>
+                <div className="card-hover-line" style={{ width: '100%' }}></div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+          
+          <div className="slider-controls">
+            <button className="slider-btn" onClick={prevFeature} aria-label="Previous feature">
+              <ChevronLeft size={24} />
+            </button>
+            <div className="slider-dots">
+              {features.map((_, i) => (
+                <div 
+                  key={i} 
+                  className={`dot ${i === featureIndex ? 'active' : ''}`}
+                  onClick={() => setFeatureIndex(i)}
+                />
+              ))}
+            </div>
+            <button className="slider-btn" onClick={nextFeature} aria-label="Next feature">
+              <ChevronRight size={24} />
+            </button>
+          </div>
+        </div>
+
+        {/* Desktop Grid View */}
+        <div className="modern-features-grid desktop-only">
           {features.map((f, i) => (
             <motion.div 
               className="modern-feature-card"
