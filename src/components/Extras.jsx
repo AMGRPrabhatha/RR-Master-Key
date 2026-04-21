@@ -35,6 +35,8 @@ export const FeaturedBrands = () => {
 };
 
 export const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+  
   const testimonials = [
     {
       name: "Saman Perera",
@@ -56,6 +58,14 @@ export const Testimonials = () => {
     }
   ];
 
+  const nextTestimonial = () => {
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
   return (
     <section className="testimonials section-padding">
       <div className="container">
@@ -64,7 +74,52 @@ export const Testimonials = () => {
           <h2 className="section-title">What Our Clients Say</h2>
         </div>
         
-        <div className="testimonial-cards">
+        {/* Mobile Slider View */}
+        <div className="testimonial-slider-mobile">
+          <div className="slider-content">
+            <motion.div 
+              className="testimonial-card"
+              key={currentIndex}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.4 }}
+            >
+              <div className="stars">★★★★★</div>
+              <p className="testimonial-text">"{testimonials[currentIndex].text}"</p>
+              <div className="customer-info">
+                <img src={testimonials[currentIndex].avatar} alt={testimonials[currentIndex].name} className="customer-avatar" />
+                <div>
+                  <h4>{testimonials[currentIndex].name}</h4>
+                  <p>{testimonials[currentIndex].role}</p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          
+          <div className="slider-controls">
+            <button className="slider-btn" onClick={prevTestimonial}>
+              <span className="sr-only">Previous</span>
+              ←
+            </button>
+            <div className="slider-dots">
+              {testimonials.map((_, i) => (
+                <div 
+                  key={i} 
+                  className={`dot ${i === currentIndex ? 'active' : ''}`}
+                  onClick={() => setCurrentIndex(i)}
+                />
+              ))}
+            </div>
+            <button className="slider-btn" onClick={nextTestimonial}>
+              <span className="sr-only">Next</span>
+              →
+            </button>
+          </div>
+        </div>
+
+        {/* Desktop Grid View */}
+        <div className="testimonial-grid-desktop">
           {testimonials.map((t, index) => (
             <motion.div 
               className="testimonial-card" 
