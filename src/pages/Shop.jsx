@@ -100,7 +100,7 @@ const Shop = () => {
     { name: 'Lexus LS', model: '2026 Flagship Sedan', img: '/cars/lexus_ls.png', brand: 'Lexus', bodyStyle: 'Sedan' },
     { name: 'Italian Luxury Sport', model: '2026 Performance Exotic', img: '/cars/italian_luxury_sport.png', brand: 'Other', bodyStyle: 'Coupe' },
     { name: 'Mitsubishi Outlander', model: '2026 Hybrid SUV', img: '/cars/mitsubishi_outlander.png', brand: 'Mitsubishi', bodyStyle: 'SUV' },
-    { name: 'Volkswagen Polo', model: '2026 Compact Hatch', img: '/cars/vw_golf.png', brand: 'Volkswagen', bodyStyle: 'Hatchback' },
+    { name: 'Volkswagen Polo', model: '2026 Compact Hatch', img: '/cars/vw_polo.png', brand: 'Volkswagen', bodyStyle: 'Hatchback' },
     { name: 'Volkswagen Golf', model: '2026 Performance Hatch', img: '/cars/vw_golf.png', brand: 'Volkswagen', bodyStyle: 'Hatchback' },
   ];
 
