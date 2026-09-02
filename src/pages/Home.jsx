@@ -1,18 +1,16 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
-import FeaturesSection from '../components/FeaturesSection';
-import BestsellerSection from '../components/BestsellerSection';
-import { FeaturedBrands, Testimonials, ArticlesGallery } from '../components/Extras';
+import IntroductionSection from '../components/IntroductionSection';
+import PopularVehiclesSection from '../components/PopularVehiclesSection';
+import TrendingBrandsSection from '../components/TrendingBrandsSection';
 
 const Home = () => {
   return (
     <>
       <HeroSection />
-      <FeaturesSection />
-      <BestsellerSection />
-      <FeaturedBrands />
-      <Testimonials />
-      <ArticlesGallery />
+      <IntroductionSection />
+      <PopularVehiclesSection />
+      <TrendingBrandsSection />
     </>
   );
 };

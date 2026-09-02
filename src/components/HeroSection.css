@@ -4,7 +4,6 @@
   min-height: 700px;
   display: flex;
   align-items: center;
-  justify-content: center;
   color: var(--color-text-light);
   overflow: hidden;
 }
@@ -22,7 +21,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+  filter: brightness(0.65);
 }
 
 .hero-overlay {
@@ -32,9 +31,9 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.5) 0%,
-    rgba(0,0,0,0.3) 100%
+    to right,
+    rgba(0,0,0,0.7) 0%,
+    rgba(0,0,0,0.1) 80%
   );
 }
 
@@ -42,77 +41,151 @@
   position: relative;
   z-index: 10;
   width: 100%;
-}
-
-.hero-text-wrapper.centered {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hero-title.centered {
-  font-size: clamp(3rem, 8vw, 6rem);
-  line-height: 1;
-  font-weight: 800;
-  margin-bottom: 2rem;
-  letter-spacing: -2px;
-  text-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.hero-subtitle.centered {
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.5;
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-
-.hero-actions.centered {
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding-top: 60px;
 }
 
-.primary-btn.shop-now-btn.pill {
-  background: white !important;
-  color: black !important;
-  padding: 1.25rem 3rem !important;
-  border-radius: 50px !important;
-  font-weight: 700 !important;
-  font-size: 1.1rem !important;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
+.hero-top-badges {
+  position: absolute;
+  top: 140px;
+  left: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 4rem);
 }
 
-.primary-btn.shop-now-btn.pill:hover {
-  background: #f0f0f0 !important;
-  transform: translateY(-5px) !important;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+.glass-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-right: 1rem;
+  color: white;
+}
+
+.hero-text-wrapper.modern-left {
+  max-width: 800px;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.hero-title.modern-left {
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1.5px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hero-subtitle.modern-left {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.hero-actions.modern-left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.modern-btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: white;
+  color: #111;
+  padding: 8px 8px 8px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-circle-arrow {
+  background: #3b82f6;
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.modern-btn-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.modern-btn-pill:hover .btn-circle-arrow {
+  background: #2563eb;
+}
+
+.modern-btn-text {
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s;
+}
+
+.modern-btn-text:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 992px) {
+  .hero-top-badges {
+    flex-direction: column;
+    gap: 1rem;
+    top: 100px;
+  }
+  .hero-text-wrapper.modern-left {
+    margin-top: 6rem;
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
     height: auto;
     min-height: 100vh;
-    padding: 120px 0 80px;
+    padding: 140px 0 80px;
   }
 
-  .hero-title.centered {
-    font-size: clamp(2.5rem, 10vw, 3.5rem);
-    line-height: 1.1;
+  .hero-title.modern-left {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    line-height: 1.15;
     margin-bottom: 1.5rem;
   }
   
-  .hero-subtitle.centered {
-    font-size: 1.1rem;
-    padding: 0 1rem;
+  .hero-subtitle.modern-left {
+    font-size: 1rem;
     margin-bottom: 2.5rem;
   }
 
-  .primary-btn.shop-now-btn.pill {
-    padding: 1rem 2.5rem !important;
-    font-size: 1rem !important;
+  .hero-actions.modern-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
   }
 }

@@ -17,11 +17,9 @@ const Navbar = () => {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
-  const isDarkThemeRoute = location.pathname === '/about';
-
   return (
     <motion.nav 
-      className={`navbar ${isScrolled ? 'scrolled' : ''} ${isDarkThemeRoute ? 'dark-theme' : ''}`}
+      className={`navbar ${isScrolled ? 'scrolled' : ''}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}

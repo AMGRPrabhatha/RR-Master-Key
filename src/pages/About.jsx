@@ -1,139 +1,94 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Globe, Award, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ShieldCheck, Globe, Award, ChevronDown, ChevronLeft, ChevronRight, Headphones } from 'lucide-react';
+import FAQSection from '../components/FAQSection';
 import './About.css'; 
 
 const About = () => {
   return (
     <div className="about-page">
-      <div className="about-hero-modern section-padding">
-        <div className="container">
-          <div className="modern-hero-grid">
-            <div className="hero-text-content">
-              <motion.h1 
-                className="solid-title"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                ELEVATING YOUR<br /><span className="outline-title">DRIVING EXPERIENCE</span>
-              </motion.h1>
-              <motion.p 
-                className="hero-desc-text"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
-                Discover the pinnacle of automotive engineering seamlessly imported to Sri Lanka. From luxury sedans to powerful SUVs, our curated selection redefines what you expect from a premium vehicle dealership. We bring you the very best of Japanese automotives, carefully selected for style, performance, and unmatched quality.
-              </motion.p>
-            </div>
-            
-            <motion.div 
-              className="modern-hero-image-wrapper"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
+      <div className="about-hero-modern">
+        <img src="/about-hero-modern.png" alt="Modern Luxury Car Showroom" className="modern-hero-bg" />
+        <div className="page-header">
+          <div className="container">
+            <motion.h1 
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              style={{ color: '#fff' }}
             >
-              <img src="/about-hero-modern.png" alt="Modern Luxury Car Showroom" className="modern-hero-img" />
-              <div className="image-accent-glow"></div>
-            </motion.div>
+              ABOUT RR MASTERKEY
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              style={{ color: '#ddd', maxWidth: '800px', margin: '0 auto', fontSize: 'clamp(0.95rem, 3vw, 1.2rem)', lineHeight: '1.6' }}
+            >
+              Discover the pinnacle of automotive engineering seamlessly imported to Sri Lanka.
+            </motion.p>
           </div>
         </div>
       </div>
 
       <div className="about-content-wrapper">
-        <div className="about-grid">
-          <motion.div 
-            className="about-text"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2>Our Story</h2>
-            <p>
-              At <strong>RR MasterKey Motors</strong>, we pride ourselves on being the premier gateway for importing the finest vehicles directly from Japan to Sri Lanka. We understand that a vehicle is more than just transportation; it's a statement of style, engineering, and reliability.
-            </p>
-            <p>
-              With over a decade of experience, we specialize in ensuring seamless importation of top-tier models, ranging from the rugged Toyota Land Cruiser to luxury Range Rovers and Jaguars. Our unwavering commitment to transparency, quality, and complete customer satisfaction makes us an unbeatable choice in the imported vehicle market.
-            </p>
-          </motion.div>
-          <motion.div 
-            className="about-image"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <img src="/feature-car.png" alt="Premium Japanese imported car" />
-          </motion.div>
-        </div>
-
-        <motion.div 
-          className="stats-section"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="stat-item">
-            <div className="stat-num">10+</div>
-            <div className="stat-label">Years Experience</div>
+        <div className="story-section-v2">
+          <div className="story-left-col">
+            <span className="story-label">Experience Imports, Reimagined</span>
           </div>
-          <div className="stat-item">
-            <div className="stat-num">500+</div>
-            <div className="stat-label">Vehicles Imported</div>
+          <div className="story-mid-col">
+            <h2 className="story-main-text">
+              <span className="text-dark">Tired of standard dealerships? At RR MasterKey Motors, we specialize in sourcing unique, premium Japanese imports that go beyond the ordinary.</span>
+              <span className="text-light"> We handle the logistics so you can immerse yourself in the driving experience, the luxury, and the moment.</span>
+            </h2>
+            <a href="/shop" className="story-btn">More About Us</a>
           </div>
-          <div className="stat-item">
-            <div className="stat-num">100%</div>
-            <div className="stat-label">Client Satisfaction</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-num">24/7</div>
-            <div className="stat-label">Support</div>
-          </div>
-        </motion.div>
-
-        <div className="values-section">
-          <h2>Why Choose Us</h2>
-          <div className="values-grid">
-            <motion.div 
-              className="value-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="value-icon"><ShieldCheck size={32} /></div>
-              <h3>Guaranteed Quality</h3>
-              <p>Every vehicle undergoes strict multi-point inspections before export and upon arrival.</p>
-            </motion.div>
-            
-            <motion.div 
-              className="value-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <div className="value-icon"><Globe size={32} /></div>
-              <h3>Direct from Japan</h3>
-              <p>We secure the best-grade vehicles straight from Japanese actions without middlemen.</p>
-            </motion.div>
-
-            <motion.div 
-              className="value-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <div className="value-icon"><Award size={32} /></div>
-              <h3>Premium Execution</h3>
-              <p>We specialize in bringing you the pinnacle of luxury, handling end-to-end logistics flawlessly.</p>
-            </motion.div>
+          <div className="story-right-col">
+            <img src="/feature-car.png" alt="RR MasterKey Story" />
           </div>
         </div>
+
+        <div className="stats-pill-v2">
+          <div className="stat-item-v2">
+            <h3>100%</h3>
+            <p>Client Satisfaction Rate</p>
+          </div>
+          <div className="stat-item-v2">
+            <h3>500+</h3>
+            <p>Vehicles Imported</p>
+          </div>
+          <div className="stat-item-v2">
+            <h3>120+</h3>
+            <p>Expert Japanese Partners</p>
+          </div>
+          <div className="stat-item-v2">
+            <h3>10+</h3>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+
+        <div className="who-we-are-section">
+          <div className="wwa-badge-container">
+            <span className="wwa-badge">• Who we are?</span>
+          </div>
+          
+          <h2 className="wwa-main-text">
+            <span className="text-gray">We're a group of automotive professionals, direct importers, </span>
+            <span className="text-black">and luxury vehicle specialists working </span>
+            <span className="text-gray">together to deliver vehicles that matter. </span>
+            <span className="text-black">From the first inquiry to the final handover, we take care of the details </span>
+            <span className="text-gray">so your import process feels effortless and personal.</span>
+          </h2>
+
+          <div className="wwa-images">
+            <img src="/cars/land_cruiser_300.png" alt="Luxury SUV" />
+            <img src="/cars/mercedes_g_class.png" alt="Premium Offroader" />
+            <img src="/cars/honda_civic.png" alt="JDM Sports" />
+          </div>
+        </div>
+
+        <FAQSection />
+
       </div>
     </div>
   );

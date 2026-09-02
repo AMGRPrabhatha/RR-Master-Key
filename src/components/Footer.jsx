@@ -1,68 +1,68 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ExternalLink } from 'lucide-react';
+import { MapPin } from 'lucide-react';
+import './Extras.css';
 
 export const Footer = () => {
   return (
-    <footer className="footer-cta">
+    <footer className="footer-eutours">
       <div className="container">
-        
-        <motion.div 
-          className="massive-text"
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          MasterKey
-        </motion.div>
-        
-        <div className="footer-content">
+        <div className="footer-top-row">
           <div className="footer-col">
-            <h5>Company</h5>
+            <h5>RESOURCES</h5>
             <ul>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="#">Careers</Link></li>
+              <li><Link to="/shop">Vehicle Fleet</Link></li>
+              <li><Link to="/blog">Import Guide</Link></li>
+            </ul>
+          </div>
+          
+          <div className="footer-col">
+            <h5>HELP</h5>
+            <ul>
+              <li><Link to="/about#faq-section">FAQs</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
           
           <div className="footer-col">
-            <h5>Customer Services</h5>
+            <h5>COMPANY</h5>
             <ul>
-              <li><Link to="#">FAQs</Link></li>
-              <li><Link to="#">User Account</Link></li>
-              <li><Link to="#">Privacy Policy / TOS</Link></li>
+              <li><Link to="/about">About RR MasterKey</Link></li>
+              <li><Link to="/blog">Our Insights</Link></li>
             </ul>
           </div>
           
-          <div className="footer-col">
-            <h5>Support</h5>
+          <div className="footer-col contact-col">
+            <h5>CONTACT INFO</h5>
             <ul>
-              <li><Link to="/blog">Articles</Link></li>
-              <li><Link to="#">Style Guide</Link></li>
-              <li><Link to="#">Licenses</Link></li>
+              <li><span>+94 77 792 4464</span></li>
+              <li><span>WhatsApp Us</span></li>
+              <li><span>info@rrmasterkey.com</span></li>
             </ul>
           </div>
-          
-          <div className="footer-col">
-            <h5>Subscribe our newsletter</h5>
-            <div className="newsletter-input">
-              <input type="email" placeholder="Enter your email..." />
-              <button>→</button>
-            </div>
+
+          <div className="footer-social">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
           </div>
         </div>
         
-        <div className="footer-bottom">
-          <div className="copyright">
-            Copyright © 2026 RR MasterKey Motors. All rights reserved.
+        <div className="footer-bottom-row">
+          <div className="footer-bottom-left">
+            <div className="location-pin">
+              <MapPin size={14} color="#ff3e00" fill="#ff3e00" /> <strong>Sri Lanka</strong>
+            </div>
+            <div className="copyright-text">
+              © 2026 RR MasterKey. All rights reserved @RP
+            </div>
           </div>
-          <div className="social-links">
-            <a href="https://www.instagram.com/rrmasterkey?igsh=MTJ4NGh5eWcyOGw4Ng==" target="_blank" rel="noopener noreferrer">
-              <ExternalLink size={20} /> Instagram
-            </a>
+          <div className="footer-bottom-right">
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="#">Terms of Use</Link>
           </div>
         </div>
       </div>

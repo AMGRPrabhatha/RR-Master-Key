@@ -1,0 +1,250 @@
+.intro-section-v2 {
+  padding: 6rem 0;
+  background-color: #ffffff;
+  color: #111;
+  font-family: inherit;
+}
+
+.intro-section-v2 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Header */
+.intro-header-v2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro-title-v2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  color: #111;
+  letter-spacing: -1px;
+}
+
+.intro-subtitle-v2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #111;
+}
+
+.black-badge {
+  background-color: #111;
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* Cards */
+.intro-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.intro-card {
+  position: relative;
+  height: 480px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.intro-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.intro-card:hover img {
+  transform: scale(1.05);
+}
+
+.grayscale-card img {
+  filter: grayscale(100%);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+  pointer-events: none;
+}
+
+.card-badge {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: #fff;
+  color: #111;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 0;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.intro-footer-v2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.intro-footer-left {
+  flex: 0 0 45%;
+}
+
+.intro-footer-left p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.btn-black-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #111;
+  color: #fff;
+  padding: 8px 10px 8px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.btn-black-pill:hover {
+  opacity: 0.85;
+}
+
+.arrow-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  color: #111;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.intro-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding-right: 2rem;
+}
+
+.stat-block-v2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #111;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #111;
+  line-height: 1;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 60px;
+  background-color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .intro-title-v2 {
+    font-size: 2.8rem;
+  }
+  .card-title {
+    font-size: 1.8rem;
+  }
+  .intro-footer-right {
+    gap: 2rem;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-section-v2 {
+    padding: 4rem 0;
+  }
+  .intro-title-v2 {
+    font-size: 2.2rem;
+  }
+  .intro-cards-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 0 1rem 1.5rem 1rem;
+    margin: 0 -1rem; /* Break out to screen edges */
+    width: calc(100% + 2rem);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .intro-cards-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .intro-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    height: 400px;
+  }
+  .intro-footer-v2 {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .intro-footer-left {
+    flex: 1;
+  }
+}

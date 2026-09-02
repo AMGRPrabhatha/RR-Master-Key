@@ -144,24 +144,33 @@ export const Testimonials = () => {
   );
 };
 
-export const ArticlesGallery = () => {
+export const ExploreCategories = () => {
   return (
-    <section className="articles-gallery section-padding">
+    <section className="explore-categories section-padding">
       <div className="container">
-        <div className="gallery-header">
-          <span className="section-badge" style={{ color: 'rgba(255,255,255,0.6)' }}>Visual Excellence</span>
-          <h2 className="section-title">Captured Elegance</h2>
+        <div className="explore-header">
+          <span className="explore-badge">JDM EXCLUSIVES</span>
+          <h2 className="explore-title">Explore Our Premium Categories</h2>
+          <p className="explore-subtitle">Discover, reserve, and import your dream vehicle with our expert guidance and tailored services.</p>
         </div>
         
-        <div className="gallery-grid">
-          <div className="gallery-item large">
-            <img src="/hero-new.png" alt="Gallery Large" />
+        <div className="explore-grid">
+          <div className="explore-item large">
+            <img src="/hero-new.png" alt="Luxury Sedans" />
+            <div className="explore-overlay"></div>
+            <h3 className="explore-label">Luxury Sedans</h3>
           </div>
-          <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800" alt="Gallery Small 1" />
-          </div>
-          <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800" alt="Gallery Small 2" />
+          <div className="explore-right-col">
+            <div className="explore-item small">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800" alt="Sports Cars" />
+              <div className="explore-overlay"></div>
+              <h3 className="explore-label">Sports Cars</h3>
+            </div>
+            <div className="explore-item small">
+              <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&q=80&w=800" alt="Supercars" />
+              <div className="explore-overlay"></div>
+              <h3 className="explore-label">Supercars</h3>
+            </div>
           </div>
         </div>
       </div>

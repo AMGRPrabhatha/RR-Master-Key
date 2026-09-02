@@ -1,0 +1,125 @@
+.trending-brands-section {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.trending-brands-section .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.tb-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b3445;
+  margin-bottom: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.tb-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.2rem;
+}
+
+/* Large items take 3 columns out of 6 (50%) */
+.tb-large {
+  grid-column: span 3;
+  height: 280px;
+}
+
+/* Small items take 2 columns out of 6 (33.3%) */
+.tb-small {
+  grid-column: span 2;
+  height: 220px;
+}
+
+.tb-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.tb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tb-item:hover img {
+  transform: scale(1.05);
+}
+
+.tb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  pointer-events: none;
+}
+
+.tb-label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  z-index: 2;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.tb-flag {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .tb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tb-large {
+    grid-column: span 1;
+    height: 240px;
+  }
+  .tb-small {
+    grid-column: span 1;
+    height: 240px;
+  }
+  .tb-item:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .tb-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 0 1rem 1.5rem 1rem;
+    margin: 0 -1rem;
+    width: calc(100% + 2rem);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .tb-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .tb-large, .tb-small, .tb-item:last-child {
+    flex: 0 0 85%;
+    grid-column: auto;
+    scroll-snap-align: center;
+    height: 250px;
+  }
+}

@@ -157,9 +157,16 @@
     position: relative;
     left: auto;
     transform: none;
+    font-size: 1.25rem;
   }
 
   .navbar-container {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.15rem;
   }
 }

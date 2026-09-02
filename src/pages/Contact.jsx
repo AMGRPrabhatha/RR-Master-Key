@@ -29,78 +29,95 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="container section-padding">
-        <div className="contact-grid">
-          
-          <motion.div 
-            className="contact-info-column"
-            initial={{ opacity: 0, x: -30 }} 
-            animate={{ opacity: 1, x: 0 }} 
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="contact-info-title">Get In Touch</h2>
-            <p className="contact-info-desc">
-              Whether you're looking for a specific model from Japan or need assistance with customs and registration in Sri Lanka, RR MasterKey Motors is here to help.
-            </p>
+      <div className="contact-section-wrapper">
+        <div className="container section-padding">
+          <div className="contact-grid">
             
-            <div className="contact-methods">
-              <div className="contact-method-item">
-                <div className="icon-circle">
-                  <MapPin size={22} color="#1a1a1a" />
-                </div>
-                <div>
-                  <h4 className="method-label">Showroom</h4>
-                  <p className="method-value">123 Colombo Road, Colombo 10, Sri Lanka</p>
-                </div>
-              </div>
+            <motion.div 
+              className="contact-info-column"
+              initial={{ opacity: 0, x: -30 }} 
+              animate={{ opacity: 1, x: 0 }} 
+              transition={{ duration: 0.6 }}
+            >
+              <span className="contact-subtitle">REACH OUT TO US</span>
+              <h2 className="contact-info-title">
+                Let's Start Planning<br />Your <span className="text-accent">Dream Vehicle</span>
+              </h2>
+              <p className="contact-info-desc">
+                Whether you have a question about our importing process, need help finding a specific luxury vehicle, or want a completely customized sourcing experience, our expert team is ready to assist you.
+              </p>
               
-              <div className="contact-method-item">
-                <div className="icon-circle">
-                  <Phone size={22} color="#1a1a1a" />
+              <div className="contact-methods">
+                <div className="contact-method-item">
+                  <div className="icon-circle">
+                    <MapPin size={20} color="#ff5a36" />
+                  </div>
+                  <div className="method-text-wrapper">
+                    <h4 className="method-label">Office Address</h4>
+                    <p className="method-value">123 Colombo Road,<br/>Colombo 10, Sri Lanka</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="method-label">Phone</h4>
-                  <p className="method-value">+94 77 123 4567</p>
+                
+                <div className="contact-method-item">
+                  <div className="icon-circle">
+                    <Phone size={20} color="#ff5a36" />
+                  </div>
+                  <div className="method-text-wrapper">
+                    <h4 className="method-label">Phone Number</h4>
+                    <p className="method-value">+94 77 123 4567</p>
+                  </div>
+                </div>
+                
+                <div className="contact-method-item">
+                  <div className="icon-circle">
+                    <Mail size={20} color="#ff5a36" />
+                  </div>
+                  <div className="method-text-wrapper">
+                    <h4 className="method-label">Email Address</h4>
+                    <p className="method-value">info@rrmasterkeymotors.lk</p>
+                  </div>
                 </div>
               </div>
-              
-              <div className="contact-method-item">
-                <div className="icon-circle">
-                  <Mail size={22} color="#1a1a1a" />
-                </div>
-                <div>
-                  <h4 className="method-label">Email</h4>
-                  <p className="method-value">info@rrmasterkeymotors.lk</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
 
-          <motion.div 
-            className="contact-form-card"
-            initial={{ opacity: 0, x: 30 }} 
-            animate={{ opacity: 1, x: 0 }} 
-            transition={{ duration: 0.6 }}
-          >
-            <form className="modern-form">
-              <div className="form-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="John Doe" />
-              </div>
-              <div className="form-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="john@example.com" />
-              </div>
-              <div className="form-group">
-                <label>Message</label>
-                <textarea rows="5" placeholder="I am interested in importing a Toyota Raize..."></textarea>
-              </div>
-              <button type="button" className="primary-btn shop-now-btn pill" style={{ width: '100%', justifyContent: 'center' }}>
-                Send Message <Send size={18} />
-              </button>
-            </form>
-          </motion.div>
+            <motion.div 
+              className="contact-form-card"
+              initial={{ opacity: 0, x: 30 }} 
+              animate={{ opacity: 1, x: 0 }} 
+              transition={{ duration: 0.6 }}
+            >
+              <form className="modern-form">
+                <div className="form-row">
+                  <div className="form-group">
+                    <label>FULL NAME *</label>
+                    <input type="text" placeholder="e.g. John Doe" />
+                  </div>
+                  <div className="form-group">
+                    <label>EMAIL ADDRESS *</label>
+                    <input type="email" placeholder="your@email.com" />
+                  </div>
+                </div>
+                <div className="form-row">
+                  <div className="form-group">
+                    <label>PHONE NUMBER</label>
+                    <input type="tel" placeholder="+94 77 123 4567" />
+                  </div>
+                  <div className="form-group">
+                    <label>VEHICLE INQUIRY *</label>
+                    <input type="text" placeholder="e.g. Toyota Land Cruiser" />
+                  </div>
+                </div>
+                <div className="form-group">
+                  <label>YOUR MESSAGE *</label>
+                  <textarea rows="5" placeholder="Tell us about your ideal vehicle, special requirements, or any questions you have..."></textarea>
+                </div>
+                <button type="button" className="accent-btn">
+                  SEND MESSAGE
+                </button>
+              </form>
+            </motion.div>
 
+          </div>
         </div>
       </div>
     </div>
