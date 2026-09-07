@@ -35,8 +35,8 @@ export const Footer = () => {
           <div className="footer-col contact-col">
             <h5>CONTACT INFO</h5>
             <ul>
-              <li><span>+94 77 792 4464</span></li>
-              <li><span>WhatsApp Us</span></li>
+              <li><span>076 811 8491</span></li>
+              <li><span>+81 80 9381 8491</span></li>
               <li><span>info@rrmasterkey.com</span></li>
             </ul>
           </div>
