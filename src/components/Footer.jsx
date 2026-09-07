@@ -37,7 +37,7 @@ export const Footer = () => {
             <ul>
               <li><span>076 811 8491</span></li>
               <li><span>+81 80 9381 8491</span></li>
-              <li><span>info@rrmasterkey.com</span></li>
+              <li><span>inforrmasterkey@gmail.com</span></li>
             </ul>
           </div>
 
