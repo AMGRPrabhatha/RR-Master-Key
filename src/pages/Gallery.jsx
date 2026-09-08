@@ -7,12 +7,14 @@ import './Shop.css'; // For .modern-page-hero styles
 const Gallery = () => {
   // Placeholder images for the gallery
   const placeholderImages = [
-    '/cars/land_cruiser_300.png',
-    '/cars/mercedes_g_class.png',
-    '/cars/mercedes_s_class.png',
-    '/cars/honda_civic.png',
-    '/cars/bmw_x7.png',
-    '/cars/land_cruiser_300.png' 
+    '/gallery/1.jpg',
+    '/gallery/2.jpg',
+    '/gallery/3.jpg',
+    '/gallery/4.jpg',
+    '/gallery/5.jpg',
+    '/gallery/6.jpg',
+    '/gallery/7.jpg',
+    '/gallery/8.jpg'
   ];
 
   return (
