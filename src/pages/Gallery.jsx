@@ -21,7 +21,7 @@ const Gallery = () => {
     <div className="gallery-page">
       {/* Hero Section */}
       <div className="modern-page-hero">
-        <img src="/contact-hero.png" alt="Gallery Hero" className="modern-hero-bg" />
+        <img src="/gallery/1.jpg" alt="Gallery Hero" className="modern-hero-bg" />
         <div className="page-header">
           <div className="container">
             <motion.h1 
