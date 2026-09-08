@@ -20,7 +20,7 @@ export const Footer = () => {
             <h5>HELP</h5>
             <ul>
               <li><Link to="/about#faq-section">FAQs</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link to="/gallery">Gallery</Link></li>
             </ul>
           </div>
           

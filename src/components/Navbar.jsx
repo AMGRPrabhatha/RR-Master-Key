@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="right-section desktop-only">
           <ul className="nav-links right-links">
             <li><Link to="/blog">BLOG</Link></li>
-            <li><Link to="/contact">CONTACT</Link></li>
+            <li><Link to="/gallery">GALLERY</Link></li>
           </ul>
         </div>
 
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <li><Link to="/shop" onClick={closeMobileMenu}>SHOP</Link></li>
                 <li><Link to="/about" onClick={closeMobileMenu}>ABOUT US</Link></li>
                 <li><Link to="/blog" onClick={closeMobileMenu}>BLOG</Link></li>
-                <li><Link to="/contact" onClick={closeMobileMenu}>CONTACT</Link></li>
+                <li><Link to="/gallery" onClick={closeMobileMenu}>GALLERY</Link></li>
               </ul>
               <div className="mobile-menu-footer">
                 <p>RR MasterKey Motors</p>
