@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="about-page">
       <div className="about-hero-modern">
-        <img src="/about-hero-modern.png" alt="Modern Luxury Car Showroom" className="modern-hero-bg" />
+        <img src="/about-image.jpg" alt="Modern Luxury Car Showroom" className="modern-hero-bg" />
         <div className="page-header">
           <div className="container">
             <motion.h1 
