@@ -32,33 +32,38 @@ const About = () => {
       </div>
 
       <div className="about-content-wrapper">
-        {/* New About Intro Section matching Screenshot 1 */}
-        <div className="about-intro-section">
-          <div className="about-intro-header">
-            <span className="established-label">ESTABLISHED 2010</span>
-            <h2 className="about-intro-title">About <span>RR MasterKey</span></h2>
+        <div className="story-section-v2">
+          <div className="story-left-col">
+            <span className="story-label">Experience Imports, Reimagined</span>
           </div>
-          <div className="about-intro-content">
-            <p className="intro-lead">
-              RR MasterKey is an innovative vehicle import company, led by dynamic and diverse professionals with decades of cumulative global experience in the automotive industry.
-            </p>
-            <p>
-              Founded in March 2010 in Sri Lanka, we specialize in delivering customized, turnkey luxury vehicle import solutions to enthusiasts, high-growth startups, and large-scale corporate partners.
-            </p>
-            <p>
-              Sourcing the finest JDM and European vehicles represents the pinnacle of our technical evolution, abandoning traditional dealership constraints. Over the past decade, global demand has shifted toward premium imports, smooth logistics, and precise, structural transparency. RR MasterKey continues to invest heavily in our supply chain to stand as a premier turnkey import solution provider.
-            </p>
+          <div className="story-mid-col">
+            <h2 className="story-main-text">
+              <span className="text-dark">Tired of standard dealerships? At RR MasterKey Motors, we specialize in sourcing unique, premium Japanese imports that go beyond the ordinary.</span>
+              <span className="text-light"> We handle the logistics so you can immerse yourself in the driving experience, the luxury, and the moment.</span>
+            </h2>
+            <a href="/shop" className="story-btn">More About Us</a>
           </div>
-          
-          <div className="about-intro-cards">
-            <div className="intro-card">
-              <img src="/cars/land_cruiser_300.png" alt="Process 01" />
-              <div className="intro-card-badge">01</div>
-            </div>
-            <div className="intro-card">
-              <img src="/cars/mercedes_s_class.png" alt="Process 02" />
-              <div className="intro-card-badge">02</div>
-            </div>
+          <div className="story-right-col">
+            <img src="/feature-car.png" alt="RR MasterKey Story" />
+          </div>
+        </div>
+
+        <div className="stats-pill-v2">
+          <div className="stat-item-v2">
+            <h3>100%</h3>
+            <p>Client Satisfaction Rate</p>
+          </div>
+          <div className="stat-item-v2">
+            <h3>500+</h3>
+            <p>Vehicles Imported</p>
+          </div>
+          <div className="stat-item-v2">
+            <h3>120+</h3>
+            <p>Expert Japanese Partners</p>
+          </div>
+          <div className="stat-item-v2">
+            <h3>10+</h3>
+            <p>Years of Experience</p>
           </div>
         </div>
 
@@ -79,34 +84,6 @@ const About = () => {
             <img src="/cars/land_cruiser_300.png" alt="Luxury SUV" />
             <img src="/cars/mercedes_g_class.png" alt="Premium Offroader" />
             <img src="/cars/honda_civic.png" alt="JDM Sports" />
-          </div>
-        </div>
-
-        {/* New Achievements Section matching Screenshot 2 */}
-        <div className="achievements-section">
-          <div className="achievements-divider">
-            <div className="divider-line"></div>
-            <span className="divider-badge">Our Achievements</span>
-            <div className="divider-line"></div>
-          </div>
-
-          <div className="achievements-grid">
-            <div className="achievement-card">
-              <h3>100%</h3>
-              <p>client satisfaction rate</p>
-            </div>
-            <div className="achievement-card">
-              <h3>500+</h3>
-              <p>vehicles imported</p>
-            </div>
-            <div className="achievement-card">
-              <h3>120+</h3>
-              <p>expert japanese partners</p>
-            </div>
-            <div className="achievement-card">
-              <h3>10+</h3>
-              <p>years of experience</p>
-            </div>
           </div>
         </div>
 
