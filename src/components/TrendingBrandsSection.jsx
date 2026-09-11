@@ -81,7 +81,7 @@ const TrendingBrandsSection = () => {
           </div>
           
           <div className="tb-item tb-small">
-            <img src="/cars/suv-car.png" alt="Ford" />
+            <img src="/cars/ford_f150.png" alt="Ford" />
             <div className="tb-overlay"></div>
             <div className="tb-content">
               <div className="tb-content-left">
