@@ -156,7 +156,7 @@ export const ExploreCategories = () => {
         
         <div className="explore-grid">
           <div className="explore-item large">
-            <img src="/hero-new.png" alt="Luxury Sedans" />
+            <img src="/hero-new.webp" alt="Luxury Sedans" />
             <div className="explore-overlay"></div>
             <h3 className="explore-label">Luxury Sedans</h3>
           </div>

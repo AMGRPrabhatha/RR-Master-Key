@@ -20,21 +20,21 @@ const IntroductionSection = () => {
         {/* Cards Section */}
         <div className="intro-cards-grid">
           <div className="intro-card grayscale-card">
-            <img src="/cars/honda_civic.png" alt="JDM Sports" />
+            <img src="/cars/honda_civic.webp" alt="JDM Sports" />
             <div className="card-badge">TOKYO, JAPAN</div>
             <h3 className="card-title">JDM SPORTS<br/>CLASSICS</h3>
             <div className="card-overlay"></div>
           </div>
           
           <div className="intro-card color-card">
-            <img src="/cars/land_cruiser_300.png" alt="Luxury SUVs" />
+            <img src="/cars/land_cruiser_300.webp" alt="Luxury SUVs" />
             <div className="card-badge">NAGOYA, JAPAN</div>
             <h3 className="card-title">LUXURY<br/>SUVs</h3>
             <div className="card-overlay"></div>
           </div>
 
           <div className="intro-card grayscale-card">
-            <img src="/cars/mercedes_s_class.png" alt="Premium Sedans" />
+            <img src="/cars/mercedes_s_class.webp" alt="Premium Sedans" />
             <div className="card-badge">YOKOHAMA, JAPAN</div>
             <h3 className="card-title">PREMIUM<br/>SEDANS</h3>
             <div className="card-overlay"></div>

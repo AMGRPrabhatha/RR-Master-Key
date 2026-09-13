@@ -149,7 +149,7 @@ const FeaturesSection = () => {
           
           <div className="excellence-visual">
             <div className="visual-image-wrapper">
-              <img src="/cars/land_cruiser_300.png" alt="Land Cruiser 300" />
+              <img src="/cars/land_cruiser_300.webp" alt="Land Cruiser 300" />
               <div className="visual-blob"></div>
             </div>
             <div className="visual-stats-card">

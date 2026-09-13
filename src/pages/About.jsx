@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="about-page">
       <div className="about-hero-modern">
-        <img src="/about-image.jpg" alt="Modern Luxury Car Showroom" className="modern-hero-bg" />
+        <img src="/about-image.webp" alt="Modern Luxury Car Showroom" className="modern-hero-bg" />
         <div className="page-header">
           <div className="container">
             <motion.h1 
@@ -44,7 +44,7 @@ const About = () => {
             <a href="/shop" className="story-btn">More About Us</a>
           </div>
           <div className="story-right-col">
-            <img src="/feature-car.png" alt="RR MasterKey Story" />
+            <img src="/feature-car.webp" alt="RR MasterKey Story" />
           </div>
         </div>
 
@@ -81,9 +81,9 @@ const About = () => {
           </h2>
 
           <div className="wwa-images">
-            <img src="/cars/land_cruiser_300.png" alt="Luxury SUV" />
-            <img src="/cars/mercedes_g_class.png" alt="Premium Offroader" />
-            <img src="/cars/honda_civic.png" alt="JDM Sports" />
+            <img src="/cars/land_cruiser_300.webp" alt="Luxury SUV" />
+            <img src="/cars/mercedes_g_class.webp" alt="Premium Offroader" />
+            <img src="/cars/honda_civic.webp" alt="JDM Sports" />
           </div>
         </div>
 

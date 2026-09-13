@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <div className="hero-background">
-        <img src="/hero.png" alt="Driving Experience" className="hero-img" />
+        <img src="/hero.webp" alt="Driving Experience" className="hero-img" />
         <div className="hero-overlay"></div>
       </div>
       

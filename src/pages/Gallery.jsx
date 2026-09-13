@@ -7,21 +7,21 @@ import './Shop.css'; // For .modern-page-hero styles
 const Gallery = () => {
   // Placeholder images for the gallery
   const placeholderImages = [
-    '/gallery/1.jpg',
-    '/gallery/2.jpg',
-    '/gallery/3.jpg',
-    '/gallery/4.jpg',
-    '/gallery/5.jpg',
-    '/gallery/6.jpg',
-    '/gallery/7.jpg',
-    '/gallery/8.jpg'
+    '/gallery/1.webp',
+    '/gallery/2.webp',
+    '/gallery/3.webp',
+    '/gallery/4.webp',
+    '/gallery/5.webp',
+    '/gallery/6.webp',
+    '/gallery/7.webp',
+    '/gallery/8.webp'
   ];
 
   return (
     <div className="gallery-page">
       {/* Hero Section */}
       <div className="modern-page-hero">
-        <img src="/gallery-image.jpg" alt="Gallery Hero" className="modern-hero-bg" />
+        <img src="/gallery-image.webp" alt="Gallery Hero" className="modern-hero-bg" />
         <div className="page-header">
           <div className="container">
             <motion.h1 

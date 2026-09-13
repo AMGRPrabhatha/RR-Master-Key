@@ -5,12 +5,12 @@ import './BestsellerSection.css';
 
 const BestsellerSection = () => {
   const cars = [
-    { name: 'Mercedes-Benz G-Class', model: '2026 Luxury Off-roader', img: '/cars/mercedes_g_class.png' },
-    { name: 'Range Rover Sport', model: '2026 Luxury SUV', img: '/cars/range_rover_sport.png' },
-    { name: 'Jaguar F-PACE', model: '2026 Performance SUV', img: '/cars/jaguar_f_pace.png' },
-    { name: 'Toyota Land Cruiser 300', model: '2026 Full-size SUV', img: '/cars/land_cruiser_300.png' },
-    { name: 'Land Rover Defender 110', model: '2026 Off-road SUV', img: '/cars/defender_110.png' },
-    { name: 'BMW X7', model: '2026 Luxury SUV', img: '/cars/bmw_x7.png' },
+    { name: 'Mercedes-Benz G-Class', model: '2026 Luxury Off-roader', img: '/cars/mercedes_g_class.webp' },
+    { name: 'Range Rover Sport', model: '2026 Luxury SUV', img: '/cars/range_rover_sport.webp' },
+    { name: 'Jaguar F-PACE', model: '2026 Performance SUV', img: '/cars/jaguar_f_pace.webp' },
+    { name: 'Toyota Land Cruiser 300', model: '2026 Full-size SUV', img: '/cars/land_cruiser_300.webp' },
+    { name: 'Land Rover Defender 110', model: '2026 Off-road SUV', img: '/cars/defender_110.webp' },
+    { name: 'BMW X7', model: '2026 Luxury SUV', img: '/cars/bmw_x7.webp' },
   ];
 
   return (

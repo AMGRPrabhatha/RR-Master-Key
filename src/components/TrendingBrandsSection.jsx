@@ -35,7 +35,7 @@ const TrendingBrandsSection = () => {
           </div>
           
           <div className="tb-item tb-large">
-            <img src="/cars/land_cruiser_300.png" alt="Toyota" />
+            <img src="/cars/land_cruiser_300.webp" alt="Toyota" />
             <div className="tb-overlay"></div>
             <div className="tb-content">
               <div className="tb-content-left">
@@ -51,7 +51,7 @@ const TrendingBrandsSection = () => {
 
           {/* Bottom Row: 3 items */}
           <div className="tb-item tb-small">
-            <img src="/cars/mercedes_s_class.png" alt="Mercedes-Benz" />
+            <img src="/cars/mercedes_s_class.webp" alt="Mercedes-Benz" />
             <div className="tb-overlay"></div>
             <div className="tb-content">
               <div className="tb-content-left">
@@ -66,7 +66,7 @@ const TrendingBrandsSection = () => {
           </div>
           
           <div className="tb-item tb-small">
-            <img src="/cars/lexus_lx600.png" alt="Lexus" />
+            <img src="/cars/lexus_lx600.webp" alt="Lexus" />
             <div className="tb-overlay"></div>
             <div className="tb-content">
               <div className="tb-content-left">
@@ -81,7 +81,7 @@ const TrendingBrandsSection = () => {
           </div>
           
           <div className="tb-item tb-small">
-            <img src="/cars/ford_f150.png" alt="Ford" />
+            <img src="/cars/ford_f150.webp" alt="Ford" />
             <div className="tb-overlay"></div>
             <div className="tb-content">
               <div className="tb-content-left">

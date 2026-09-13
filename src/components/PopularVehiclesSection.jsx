@@ -10,7 +10,7 @@ const PopularVehiclesSection = () => {
   const vehicles = [
     {
       id: 1,
-      image: '/cars/land_cruiser_300.png',
+      image: '/cars/land_cruiser_300.webp',
       title: 'Toyota Land Cruiser 300',
       location: 'Japan',
       year: '2026 Model',
@@ -20,7 +20,7 @@ const PopularVehiclesSection = () => {
     },
     {
       id: 2,
-      image: '/cars/mercedes_g_class.png',
+      image: '/cars/mercedes_g_class.webp',
       title: 'Mercedes-Benz G-Class AMG',
       location: 'Japan',
       year: '2026 Model',
@@ -30,7 +30,7 @@ const PopularVehiclesSection = () => {
     },
     {
       id: 3,
-      image: '/cars/bmw_x7.png',
+      image: '/cars/bmw_x7.webp',
       title: 'BMW X7 Luxury Edition',
       location: 'Japan',
       year: '2026 Model',
