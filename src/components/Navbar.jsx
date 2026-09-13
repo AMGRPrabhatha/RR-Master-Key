@@ -34,9 +34,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="logo">
-          <Link to="/" onClick={closeMobileMenu}>
-            <img src="/logo.jpg" alt="RR MasterKey Logo" style={{ height: '40px', objectFit: 'contain', borderRadius: '4px' }} />
-          </Link>
+          <Link to="/" onClick={closeMobileMenu}>RR MasterKey</Link>
         </div>
 
         {/* Desktop Links - Right */}
