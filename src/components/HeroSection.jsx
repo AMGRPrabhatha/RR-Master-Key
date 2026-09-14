@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <div className="hero-background">
-        <img src="/hero.webp" alt="Driving Experience" className="hero-img" />
+        <img src="/hero-banner-new.webp" alt="Driving Experience" className="hero-img" />
         <div className="hero-overlay"></div>
       </div>
       
@@ -21,14 +21,6 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h1 className="hero-title modern-left">
-            Discover Excellence<br/>
-            with RR MasterKey
-          </h1>
-          
-          <p className="hero-subtitle modern-left">
-            Experience the ultimate driving performance with top-tier vehicles. Explore breathtaking JDM models, enjoy luxury imports, and create magical driving memories through carefully curated sourcing.
-          </p>
 
           <div className="hero-actions modern-left">
             <Link to="/shop" className="modern-btn-pill">
