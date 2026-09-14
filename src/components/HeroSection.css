@@ -1,7 +1,7 @@
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 700px;
+  height: 85vh;
+  min-height: 600px;
   display: flex;
   align-items: center;
   color: var(--color-text-light);
@@ -168,8 +168,8 @@
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: 75vh;
-    padding: 120px 0 60px;
+    min-height: 65vh;
+    padding: 100px 0 50px;
   }
 
   .hero-title.modern-left {
