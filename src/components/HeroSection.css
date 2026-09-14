@@ -1,7 +1,7 @@
 .hero {
   position: relative;
-  height: 85vh;
-  min-height: 600px;
+  height: 100vh;
+  min-height: 700px;
   display: flex;
   align-items: center;
   color: var(--color-text-light);
@@ -168,24 +168,24 @@
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: 65vh;
-    padding: 100px 0 50px;
+    min-height: 60vh;
+    padding: 110px 0 50px;
   }
 
   .hero-title.modern-left {
     font-size: clamp(2rem, 8vw, 3.5rem);
     line-height: 1.15;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   
   .hero-subtitle.modern-left {
-    font-size: 1rem;
-    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
   }
 
   .hero-actions.modern-left {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 1.5rem;
   }
 }
