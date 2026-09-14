@@ -21,6 +21,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.65);
 }
 
 .hero-overlay {
@@ -29,7 +30,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.2);
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7) 0%,
+    rgba(0,0,0,0.1) 80%
+  );
 }
 
 .hero-content {
@@ -163,8 +168,8 @@
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: 50vh;
-    padding: 100px 0 60px;
+    min-height: 75vh;
+    padding: 120px 0 60px;
   }
 
   .hero-title.modern-left {
