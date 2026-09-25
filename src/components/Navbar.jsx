@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -18,31 +18,34 @@ const Navbar = () => {
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <motion.nav 
-      className={`navbar ${isScrolled ? 'scrolled' : ''}`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-    >
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        {/* Desktop Links - Left */}
-        <ul className="nav-links left-links desktop-only">
-          <li><Link to="/">HOME</Link></li>
-          <li><Link to="/shop">SHOP</Link></li>
-          <li><Link to="/about">ABOUT US</Link></li>
-        </ul>
-
-        {/* Logo */}
-        <div className="logo">
-          <Link to="/" onClick={closeMobileMenu}>RR MasterKey</Link>
+        
+        {/* Left: Logo Pill */}
+        <div className="nav-pill logo-pill">
+          <div className="logo-icon">RR</div>
+          <Link to="/" onClick={closeMobileMenu} className="logo-text">RR MasterKey</Link>
         </div>
 
-        {/* Desktop Links - Right */}
-        <div className="right-section desktop-only">
-          <ul className="nav-links right-links">
-            <li><Link to="/blog">BLOG</Link></li>
-            <li><Link to="/gallery">GALLERY</Link></li>
+        {/* Center: Links Pill (Desktop) */}
+        <div className="nav-pill center-pill desktop-only">
+          <ul className="nav-links">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/shop">Inventory</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
           </ul>
+        </div>
+
+        {/* Right: Contact Pill (Desktop) */}
+        <div className="nav-pill contact-pill desktop-only">
+          <a href="tel:+818093818491" className="online-status">
+            <Phone size={14} />
+            <span>Online</span>
+          </a>
+          <a href="tel:+818093818491" className="phone-number">+81 80-9381-8491</a>
+          <a href="tel:+818093818491" className="contact-btn">CONTACT US</a>
         </div>
 
         {/* Mobile Toggle */}
@@ -61,12 +64,19 @@ const Navbar = () => {
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
             >
               <ul className="mobile-nav-links">
-                <li><Link to="/" onClick={closeMobileMenu}>HOME</Link></li>
-                <li><Link to="/shop" onClick={closeMobileMenu}>SHOP</Link></li>
-                <li><Link to="/about" onClick={closeMobileMenu}>ABOUT US</Link></li>
-                <li><Link to="/blog" onClick={closeMobileMenu}>BLOG</Link></li>
-                <li><Link to="/gallery" onClick={closeMobileMenu}>GALLERY</Link></li>
+                <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
+                <li><Link to="/about" onClick={closeMobileMenu}>About</Link></li>
+                <li><Link to="/shop" onClick={closeMobileMenu}>Inventory</Link></li>
+                <li><Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link></li>
+                <li><Link to="/blog" onClick={closeMobileMenu}>Blog</Link></li>
               </ul>
+              
+              <div className="mobile-contact-info">
+                <a href="tel:+818093818491" className="mobile-call-btn">
+                  <Phone size={20} /> Call Now: +81 80-9381-8491
+                </a>
+              </div>
+
               <div className="mobile-menu-footer">
                 <p>RR MasterKey Motors</p>
                 <span>Importing Excellence</span>
@@ -75,7 +85,7 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
