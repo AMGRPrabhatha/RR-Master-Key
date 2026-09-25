@@ -69,18 +69,33 @@ const Navbar = () => {
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
           >
+            {/* Header */}
+            <div className="mobile-menu-header">
+              <div className="mobile-menu-logo">
+                <div className="logo-icon">RR</div>
+                <span>RR MasterKey</span>
+              </div>
+              <button className="mobile-menu-close" onClick={closeMobileMenu}>
+                <X size={20} />
+              </button>
+            </div>
+
+            {/* Links */}
             <ul className="mobile-nav-links">
-              <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
-              <li><Link to="/about" onClick={closeMobileMenu}>About</Link></li>
-              <li><Link to="/shop" onClick={closeMobileMenu}>Inventory</Link></li>
-              <li><Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link></li>
-              <li><Link to="/blog" onClick={closeMobileMenu}>Blog</Link></li>
+              <li><Link to="/" onClick={closeMobileMenu} className={isActive('/') ? 'active' : ''}>Home</Link></li>
+              <li><Link to="/about" onClick={closeMobileMenu} className={isActive('/about') ? 'active' : ''}>About</Link></li>
+              <li><Link to="/shop" onClick={closeMobileMenu} className={isActive('/shop') ? 'active' : ''}>Inventory</Link></li>
+              <li><Link to="/gallery" onClick={closeMobileMenu} className={isActive('/gallery') ? 'active' : ''}>Gallery</Link></li>
+              <li><Link to="/blog" onClick={closeMobileMenu} className={isActive('/blog') ? 'active' : ''}>Blog</Link></li>
             </ul>
+
+            {/* Call Button */}
             <div className="mobile-contact-info">
               <a href="tel:+818093818491" className="mobile-call-btn">
                 <Phone size={18} /> Call: +81 80-9381-8491
               </a>
             </div>
+
             <div className="mobile-menu-footer">
               <p>RR MasterKey Motors</p>
               <span>Importing Excellence</span>
