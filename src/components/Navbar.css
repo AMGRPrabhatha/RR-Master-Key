@@ -347,7 +347,7 @@
   }
 
   .navbar-wrapper {
-    padding: 0.85rem 1rem;
+    padding: 0.65rem 0.75rem;
   }
 
   .navbar-container {
@@ -361,7 +361,7 @@
     background: #ffffff;
     border-radius: 100px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 0.4rem 1rem 0.4rem 0.45rem;
+    padding: 0.35rem 0.85rem 0.35rem 0.4rem;
     width: auto;
     max-width: none;
     flex: 0 0 auto;
@@ -376,8 +376,8 @@
     color: #111;
     cursor: pointer;
     border-radius: 50%;
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     pointer-events: all;
     flex-shrink: 0;
@@ -391,17 +391,17 @@
 
 @media (max-width: 480px) {
   .navbar-wrapper {
-    padding: 0.75rem 0.85rem;
+    padding: 0.65rem 0.75rem;
   }
   .logo-text {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
   }
   .logo-icon {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
   }
   .mobile-toggle {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 }
