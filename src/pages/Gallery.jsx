@@ -28,17 +28,15 @@ const Gallery = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              style={{ color: '#fff' }}
             >
-              Gallery
+              Photo Gallery
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              style={{ color: '#ddd' }}
             >
-              Take a look at some of the premium imports we've delivered.
+              Explore our delivered Japanese imports, sports classics, and luxury vehicle collection.
             </motion.p>
           </div>
         </div>

@@ -146,14 +146,14 @@ const Shop = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              Premium Inventory
+              Our Inventory
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Directly imported excellence from Japan to Sri Lanka.
+              Browse our curated collection of verified Japanese vehicles, sports classics, and luxury SUVs ready for global shipping.
             </motion.p>
           </div>
         </div>

@@ -15,17 +15,15 @@ const About = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              style={{ color: '#fff' }}
             >
-              ABOUT RR MASTERKEY
+              Our Story
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              style={{ color: '#ddd', maxWidth: '800px', margin: '0 auto', fontSize: 'clamp(0.95rem, 3vw, 1.2rem)', lineHeight: '1.6' }}
             >
-              Discover the pinnacle of automotive engineering seamlessly imported to Sri Lanka.
+              Passionate about sourcing and delivering the pinnacle of Japanese automotive engineering to the world.
             </motion.p>
           </div>
         </div>
