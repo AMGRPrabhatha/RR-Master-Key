@@ -7,9 +7,9 @@
 .modern-page-hero {
   position: relative;
   z-index: 1;
-  height: 380px;
-  min-height: 340px;
-  max-height: 440px;
+  height: 420px;
+  min-height: 380px;
+  max-height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,7 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0.55);
+  filter: brightness(0.82);
 }
 
 .page-header {

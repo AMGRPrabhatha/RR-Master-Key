@@ -1,8 +1,8 @@
 .hero {
   position: relative;
   height: calc(100vh - 6.5rem);
-  min-height: 520px;
-  max-height: 640px;
+  min-height: 620px;
+  max-height: 760px;
   display: flex;
   align-items: center;
   color: var(--color-text-light);
@@ -24,7 +24,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.65);
+  filter: brightness(0.92);
 }
 
 .hero-overlay {
@@ -35,8 +35,9 @@
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(0,0,0,0.7) 0%,
-    rgba(0,0,0,0.15) 80%
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.02) 80%
   );
 }
 
@@ -63,16 +64,18 @@
   margin-bottom: 1.25rem;
   letter-spacing: -1px;
   color: white;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .hero-subtitle.modern-left {
   font-size: 0.98rem;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.95);
   line-height: 1.6;
   max-width: 480px;
   margin-bottom: 2.25rem;
   font-weight: 400;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
 }
 
 .hero-actions.modern-left {
